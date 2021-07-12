@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+           background: black;
+           width: 100%;
+        }
+     
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        header{
+            width: 1366px;
+            margin: auto;
+            width: 1366px;
+            height: 100px;
+           
+        }
+    
+        .logo{
+            float: left;
+            margin-left: 23px;
+            margin-top: 21px;
+            
+        }
+        #gnb > ul{
+            list-style: none;
+            position: relative;
+            left: 20px;
+            top: 39px;
+            font-size: 18px;    
+            
+        }
+        #gnb > ul > li {
+            margin-right: 25px;
+            display: inline-block;
+        }
+        #icon{
+            float: right;  
+        }
+        #icon > form {
+            position: relative;
+            right: 95px;
+            top: 15px;
+        }
+        #icon > form > input {
+            background: none;
+            border: none;
+            border-bottom:  white 2px solid;
+            color: rgb(241, 241, 241, 0.5);
+            text-align: center;
+            margin-right: 6px;
+        }
+        #icon > form > .submit{
+            height: 30px;
+            background-image: url(./images/Icon\ feather-search.png);
+            background-size: cover;
+            color: rgb(0, 0, 0 , 0.0);
+            border-bottom: none;
+        }
+        #icon > a > img {
+          position: relative;
+          left: 143px;
+          bottom: 18px;
+          width: 35px;
+
+        }
+        section{
+            width: 1366px;
+            margin: auto;
+        }
+        section > #content1 {
+            text-align: center;
+            position: relative;
+           
+        }
+        section > #content1 > .img{
+            width: 100%;
+        }
+        
+    
+        section > #content1 > #content1-text{ 
+           color: white;
+           position: absolute;
+           bottom:  150px;
+           right: 111px;
+           text-align: justify;
+        }
+        section > #content1 > #content1-text > p{
+            margin-bottom: 26px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        section >#content1 > #content1-text > p > span{
+            color: #1DA4FE;
+            font-weight: bold;
+            
+        }
+        section > #content1 > #content1-text > button{
+            background: #1DA4FE;
+            width: 200px;
+            height: 40px;
+            border-radius: 30px;
+            border: none;
+            margin-top: 25px;
+            margin-right: 16px;
+            font-weight: bold;
+        }
+        section > #content1 > #content1-text > button:hover{
+            background: rgb(184, 40, 88);
+        }
+        #content2{
+            width: 1366px;
+            margin: auto;
+            height: 237px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border: none;
+        }
+        #content2 > .box1 > img{
+            margin-right: 25px;
+            margin-left: 25px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+           
+        }
+        .last-right{
+            margin-right: none;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div class="img">
+                <a href="https://blog.naver.com/janghahyun-/221952359520"><img src="./images/logo.png" alt="" class="logo"></a>
+            </div>
+          
+        <nav id="gnb">
+            <ul>
+                <li><a href="">제품</a></li>
+                <li><a href="">프로모션</a></li>
+                <li><a href="">매장안내</a></li>
+                <li><a href="">고객지원</a></li>
+            </ul>
+        </nav>
+        <div id="icon">
+            <form action="">
+                <input type="text" value="" placeholder="제품검색" width="200px">
+                <input type="submit" value="검색"   class="submit" >
+            </form>
+            <a href=""><img src="./images/shop.png" alt="" ></a>
+        </div>
+        </div>
+    </header>
+    
+    <section>
+        <div id="content1"> 
+            <img src="./images/bg.png" alt="" class="img">
+
+            <div id="content1-text">
+                <p>더욱 강력해진<br>
+                    자동흡입조절, 먼지량 측정, 레이저 등 <br>
+                    스마트한 <span>dyson</span> 무선 청소기를 만나보세요
+                </p>
+                <button><a href="">더 알아보기</a></button>
+                <button><a href="">구매하기</a></button>
+            </div>
+            
+        </div>
+      
+    </section>
+    <section>
+        <div id="content2">
+          <div class="box1">
+              <img src="./images/dyson1.jpg" alt="">
+            <p><a href="">무선 청소기</a></p>
+          </div>
+          <div class="box1">
+            <img src="./images/dyson2.jpg" alt="">
+            <p><a href="">헤어 드라이기</a></p>
+        </div>
+        <div class="box1">
+            <img src="./images/dyson3.jpg" alt="">
+            <p><a href="">선풍기</a></p>
+        </div>
+        <div class="last-right box1">
+            <img src="./images/dyson4.jpg" alt="">
+            <p><a href="">조명</a></p>
+        </div>
+    
+        </div>
+    </section>
+</body>
+</html>
